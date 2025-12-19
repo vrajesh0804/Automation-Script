@@ -1,13 +1,13 @@
 from playwright.sync_api import sync_playwright
 
-def login_linkedin():
+def login_website():
 	with sync_playwright() as p:
 		browser = p.chromium.launch(headless=False)
 		context = browser.new_context()
 		page = context.new_page()
 		context.clear_cookies()
         # Clear storage (local/session)
-		page.goto("https://www.linkedin.com/login")
+		page.goto("https://www.website.com/login")
 
 		page.evaluate("() => { window.localStorage.clear(); window.sessionStorage.clear(); }")
 
@@ -15,14 +15,14 @@ def login_linkedin():
 		# page.fill("input#username", username)
 		# page.fill("input#password", password)
 
-		page.fill("input#username", "cocvrajesh@gmail.com")
-		page.fill("input#password", "Chocolate@08")
+		page.fill("input#username", "username@gmail.com")
+		page.fill("input#password", "password")
 
 		# Click on the login button
 		page.click("button[type='submit']")
 
-		# Wait for LinkedIn feed page to load by checking main feed element visibility
-		page.wait_for_url("https://www.linkedin.com/feed/*", timeout=20000)
+		# Wait for website feed page to load by checking main feed element visibility
+		page.wait_for_url("https://www.website.com/feed/*", timeout=20000)
 		print("Login successful!")
 
 		# Wait for search input to be visible on top nav
@@ -104,7 +104,4 @@ def login_linkedin():
     
 
 if __name__ == "__main__":
-    # user = input("Enter LinkedIn username/email: ")
-    # pwd = input("Enter LinkedIn password: ")
-    # login_linkedin(user, pwd)
-    login_linkedin()
+    login_website()
