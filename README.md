@@ -1,2 +1,9 @@
-# automation_script
-Automated LinkedIn networking tool built with Python and Playwright. Logs in, runs targeted People searches, and sends connection requests across paginated results, handling modals with optional personalized notes for scalable outreach.
+# Automation Script
+• Developed an automated script to enhance LinkedIn networking efficiency.
+• Automatically logs in, performs targeted keyword searches, applies People filter, and sends connection requests.
+• Supports paginated results, connecting across multiple pages seamlessly.
+• Handles connection modals to send invites with or without personalized notes.
+• Built with scalability in mind; future plans include Android/iOS mobile apps and expanded note-sending features.
+• Demonstrates expertise in Python automation, browser scripting, and professional networking tools.
+• Developed an automated script to enhance LinkedIn networking efficiency. • Automatically logs in, performs targeted keyword searches, applies People filter, and sends connection requests. • Supports paginated results, connecting across multiple pages seamlessly. • Handles connection modals to send invites with or without personalized notes. • Built with scalability in mind; future plans include Android/iOS mobile apps and expanded note-sending features. • Demonstrates expertise in Python automation, browser scripting, and professional networking tools.
+Skills: Python (Programming Language) · Playwright
